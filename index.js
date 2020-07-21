@@ -13,3 +13,5 @@ const portfolio = require('./JSON/portfolio.json');
 // Send json
 app.get('/about', (req, res) => { res.json(about) });
 app.get('/portfolio', (req, res) => { res.json(portfolio) })
+
+app.get('/', (req, res) => { res.json('is Working!') })
